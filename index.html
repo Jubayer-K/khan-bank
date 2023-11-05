@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khan Bank ltd. | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- website 1st page 'login area' -->
+    <div id="login-area">
+        <h1 class="text-center">Welcome to <span id="bankName">Khan</span> Bank ltd.</h1>
+        <div class="submit-area">
+            <!-- login heading -->
+            <h4>Login</h4>
+            <br>
+            <!-- email input box -->
+            <input type="email" placeholder="Enter Your Email Here" class="form-control">
+            <br>
+            <!-- password input box -->
+            <input type="password" placeholder="Enter Password" class="form-control">
+            <br>
+            <!-- sign in button -->
+            <button id="signInButton" class="btn btn-success">Sign In</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- website 2nd page 'transaction area' -->
+    <div id="transaction-area">
+         <!-- Transaction heading -->
+        <h1 class="text-center">Transaction <span id="transDetails">Details</span></h1>
+        <!-- transaction column -->
+        <div class="row">
+            <!-- diposit box -->
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <!-- withdraw box -->
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$370</h2>
+                </div>
+            </div>
+            <!-- balance box -->
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$2739</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- submission area -->
+        <div class="row">
+            <!-- deposit input box -->
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input type="text" class="form-control" placeholder="$ amount you want to deposit" >
+                    <br>
+                    <!-- deposit submit button -->
+                    <button class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+
+            <!-- withdraw input box -->
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw" >
+                    <br>
+                    <!-- deposit submit button -->
+                    <button class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // JavaScript Code
+        // assigning login button with javascript  
+        const loginBtn = document.getElementById("signInButton");
+        // Telling login button to disappear contents in login area when clicked
+        loginBtn.addEventListener("click", function () {
+            const loginArea = document.getElementById("login-area");
+            loginArea.style.display = "none";
+            // telling login button to appear transaction area when clicked
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
+        })
+    </script>
+</body>
+
+</html>

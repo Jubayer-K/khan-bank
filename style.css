@@ -1,0 +1,57 @@
+body {
+    padding: 100px;
+    /* background-image: url(Pics/background.jpg);
+    background-size: cover; */
+}
+
+#bankName {
+    color: #28a745;
+}
+
+/* Login box styles */
+
+.submit-area {
+
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px grey;
+    background-image: url(Pics/loginBackground.jpg);
+    background-repeat: no-repeat;
+
+}
+
+/* Transaction Area 2nd Page */
+#transDetails {
+    color: #28a745;
+}
+
+#transaction-area {
+    display: none;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+
+.status {
+    margin: 40px 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.deposit {
+    background-color: slateblue;
+    box-shadow: 10px 10px 20px slateblue;
+
+}
+
+.withdraw {
+    background-color: lightsalmon;
+    box-shadow: 10px 10px 20px lightsalmon;
+}
+
+.balance {
+    background-color: #28a745;
+    box-shadow: 10px 10px 20px #28a745;
+}
