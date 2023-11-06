@@ -5,7 +5,18 @@ body {
 }
 
 #bankName {
-    color: #28a745;
+    color: #ffffff;
+    background: #28a745;
+    border-radius: 2% 50%;
+    height: 100px;
+    padding: 10px;
+    transition: all 3s;
+    transition-timing: ease-in-out;
+    width: 100px;
+    text-align: center;
+    box-shadow: 5px 5px 10px grey;
+
+
 }
 
 /* Login box styles */
@@ -18,6 +29,8 @@ body {
     box-shadow: 10px 10px 20px grey;
     background-image: url(Pics/loginBackground.jpg);
     background-repeat: no-repeat;
+
+
 
 }
 
@@ -38,20 +51,40 @@ body {
     color: white;
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 5px 5px 10px grey;
 }
 
 .deposit {
     background-color: slateblue;
-    box-shadow: 10px 10px 20px slateblue;
+    transition: transform 1s;
 
+
+}
+
+.deposit:hover {
+    box-shadow: 20px 20px 50px slateblue;
+    transition: 1s;
+    transform: scale(1.2);
 }
 
 .withdraw {
     background-color: lightsalmon;
-    box-shadow: 10px 10px 20px lightsalmon;
+    transition: transform 1s;
+}
+
+.withdraw:hover {
+    box-shadow: 20px 20px 50px lightsalmon;
+    transition: 1s;
+    transform: scale(1.2);
 }
 
 .balance {
     background-color: #28a745;
-    box-shadow: 10px 10px 20px #28a745;
+    transition: transform 1s;
+}
+
+.balance:hover {
+    box-shadow: 20px 20px 50px #28a745;
+    transition: 1s;
+    transform: scale(1.2);
 }
